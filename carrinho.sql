@@ -45,9 +45,6 @@ drop table carrinho;
 -- selecionar todos os registros da tabela
 select * from carrinho;
 
--- operações matemáticas
-select sum(valor*quantidade) as total from carrinho;
-
 
 select * from carrinho where produto='banana';
 
@@ -69,6 +66,8 @@ select * from carrinho where produto='cereja';
 
 select * from carrinho where produto='pitanga';
 
+-- operações matemáticas
+select sum(valor*quantidade) as total from carrinho;
 
 -- Ordem alfabética
 select * from carrinho order by produto asc;
